@@ -3,10 +3,49 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"/>
+<meta name="theme-color" content="#07080c"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
 <title>PAO TAP</title>
 <link rel="stylesheet" href="app.css"/>
 </head>
 <body>
-<p>See README. Full UI in next commit if this stub lands.</p>
-<script>location.replace('./app.html')</script>
+<canvas id="gl"></canvas>
+<div id="how"><card>
+  <h2>A digit is a scene</h2>
+  <p><b style="color:#efece4">Who does what to which thing.</b> Bind fills the three slots. Recall asks you to tap them in order. Starter objects follow a public Major System peg list — not personal data, not a survey.</p>
+  <button class="btn primary" id="start"><strong>Start with 00</strong><span>you can edit every bind</span></button>
+</card></div>
+<div id="ui">
+  <header>
+    <div class="brand"><small>MAJOR PAO · 00–19</small><b>PAO TAP</b></div>
+    <div id="modes">
+      <button data-mode="build" class="on"><strong>Bind</strong><span>edit</span></button>
+      <button data-mode="drill"><strong>Recall</strong><span>test</span></button>
+    </div>
+  </header>
+  <div id="hint">Fill <b>who / does / thing</b>, then save.</div>
+  <div id="digitWrap">
+    <div class="lbl">DIGIT</div>
+    <div id="digit">00</div>
+    <div id="dots"></div>
+    <div id="scene"></div>
+  </div>
+  <div id="slots">
+    <div class="slot p" data-k="person"><em>WHO</em><div class="role">person</div><div class="v">—</div><div class="undo">tap to clear</div></div>
+    <div class="slot a" data-k="action"><em>DOES</em><div class="role">action</div><div class="v">—</div><div class="undo">tap to clear</div></div>
+    <div class="slot o" data-k="object"><em>THING</em><div class="role">object</div><div class="v">—</div><div class="undo">tap to clear</div></div>
+  </div>
+  <div id="pool">
+    <div id="poolHead"><span id="poolTitle">Pieces</span><span>swipe →</span></div>
+    <div id="chips"></div>
+    <div id="bar">
+      <button class="btn" id="prev"><strong>Previous</strong><span>last digit</span></button>
+      <button class="btn" id="next"><strong>Next</strong><span>skip save</span></button>
+      <button class="btn primary" id="lock"><strong>Save bind</strong><span>write this digit</span></button>
+      <button class="btn" id="export"><strong>Export JSON</strong><span>copy + download</span></button>
+    </div>
+  </div>
+</div>
+<div id="toast"></div>
+<script src="app.js"></script>
 </body></html>
