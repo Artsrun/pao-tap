@@ -1,0 +1,37 @@
+{
+  "version": "1.1",
+  "system": "PAO",
+  "owner": "generic-starter",
+  "locale": ["en"],
+  "range": "00-19",
+  "provenance": {
+    "objects": "Art of Memory Forum Major System peg worksheet 2017-05-25, keys 00-19. 11 uses tote instead of the forum's crude peg.",
+    "source_url": "https://forum.artofmemory.com/t/major-system-peg-list-00-99-worksheet/32589",
+    "major": "0=S/Z 1=T/D 2=N 3=M 4=R 5=L 6=SH/J 7=K/G 8=F/V 9=P/B",
+    "persons_actions": "Common English roles and verbs. Not championship PAO. Not survey averages.",
+    "note": "Starter seed only. Swap images in Bind mode."
+  },
+  "rule": "digit → person does action to/with object.",
+  "encoding": {
+    "00": {"person": {"en": "sis", "cue": "S-S"}, "action": {"en": "sauces"}, "object": {"en": "sauce"}},
+    "01": {"person": {"en": "sad dad", "cue": "S-T"}, "action": {"en": "sows"}, "object": {"en": "seed"}},
+    "02": {"person": {"en": "nun", "cue": "S-N"}, "action": {"en": "suns"}, "object": {"en": "sun"}},
+    "03": {"person": {"en": "sam", "cue": "S-M"}, "action": {"en": "slams"}, "object": {"en": "sumo"}},
+    "04": {"person": {"en": "sir", "cue": "S-R"}, "action": {"en": "surveys"}, "object": {"en": "sierra"}},
+    "05": {"person": {"en": "sailor", "cue": "S-L"}, "action": {"en": "shovels"}, "object": {"en": "soil"}},
+    "06": {"person": {"en": "judge", "cue": "S-J"}, "action": {"en": "judges"}, "object": {"en": "sewage"}},
+    "07": {"person": {"en": "skater", "cue": "S-K"}, "action": {"en": "skates"}, "object": {"en": "sky"}},
+    "08": {"person": {"en": "sophie", "cue": "S-F"}, "action": {"en": "sits"}, "object": {"en": "sofa"}},
+    "09": {"person": {"en": "spy", "cue": "S-P"}, "action": {"en": "soaps"}, "object": {"en": "soap"}},
+    "10": {"person": {"en": "teddy", "cue": "T-S"}, "action": {"en": "taps"}, "object": {"en": "toes"}},
+    "11": {"person": {"en": "dad", "cue": "T-T"}, "action": {"en": "totes"}, "object": {"en": "tote"}},
+    "12": {"person": {"en": "tin man", "cue": "T-N"}, "action": {"en": "tins"}, "object": {"en": "tin"}},
+    "13": {"person": {"en": "tommy", "cue": "T-M"}, "action": {"en": "tombs"}, "object": {"en": "tomb"}},
+    "14": {"person": {"en": "racer", "cue": "T-R"}, "action": {"en": "rolls"}, "object": {"en": "tire"}},
+    "15": {"person": {"en": "tailor", "cue": "T-L"}, "action": {"en": "tails"}, "object": {"en": "tail"}},
+    "16": {"person": {"en": "dj", "cue": "T-SH"}, "action": {"en": "dishes"}, "object": {"en": "dish"}},
+    "17": {"person": {"en": "doc", "cue": "T-K"}, "action": {"en": "tacks"}, "object": {"en": "tack"}},
+    "18": {"person": {"en": "diver", "cue": "T-F"}, "action": {"en": "dives"}, "object": {"en": "dove"}},
+    "19": {"person": {"en": "debutante", "cue": "T-P"}, "action": {"en": "dips"}, "object": {"en": "tub"}}
+  }
+}
